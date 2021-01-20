@@ -51,7 +51,7 @@ Başlangıç durum tahmini, ![](https://latex.codecogs.com/gif.latex?%5Chat%7Bx%
   
   ![](https://latex.codecogs.com/gif.latex?%5Ctextbf%7BK%7D_k%20%3D%20%5Ctextbf%7BP%7D_%7Bk%7C%7Bk-1%7D%7D%20%5Ctextbf%7BH%7D%5ET_k%20%28%5Ctextbf%7BH%7D_k%20%5Ctextbf%7BP%7D_%7Bk%7C%7Bk-1%7D%7D%20%5Ctextbf%7BH%7D%5ET_k%20&plus;%20%5Ctextbf%7BR%7D_k%29%5E%7B-1%7D)     (5)
   
-  Bu adım sonrasında, durum vektörü bir 'yenileme' ile güncellenir. Basitçe bu yenileme işeminde, eski durum vektörü üzerine Kalman Kazancı ile çıktının ölçümü, ki biz buna denklemde ![](https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bz%7D_k) diyeceğiz, ve tahmin edilen çıktı ölçeklendirilir:
+  ![](https://latex.codecogs.com/gif.latex?%5Ctextbf%7BH%7D) matrisi, çıktı denklemini tanımlamak için gereklidir ve ![](https://latex.codecogs.com/gif.latex?%5Ctextbf%7BR%7D) ise ölçüm gürültüsünün kovaryansını temsil eder. Bu adım sonrasında, durum vektörü bir 'yenileme' ile güncellenir. Basitçe bu yenileme işeminde, eski durum vektörü üzerine Kalman Kazancı ile çıktının ölçümü, ki biz buna denklemde ![](https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bz%7D_k) diyeceğiz, ve tahmin edilen çıktı ölçeklendirilir:
   
   ![](https://latex.codecogs.com/gif.latex?%5Chat%7B%5Ctextbf%7Bx%7D%7D_k%20%3D%20%5Chat%7B%5Ctextbf%7Bx%7D%7D_%7Bk%7C%7Bk-1%7D%7D%20&plus;%20%5Ctextbf%7BK%7D_k%28%5Ctextbf%7Bz%7D_k%20-%20%5Ctextbf%7BH%7D_k%20.%20%5Chat%7B%5Ctextbf%7Bx%7D%7D_%7Bk%7C%7Bk-1%7D%7D%29)     (6)
   

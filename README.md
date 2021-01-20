@@ -27,10 +27,10 @@ Burada **x** durum vektörüdür ve boyutu ![](https://latex.codecogs.com/gif.la
 
 ![](https://latex.codecogs.com/gif.latex?F) ,  ![](https://latex.codecogs.com/gif.latex?G) ve ![](https://latex.codecogs.com/gif.latex?H) vektörlerine gelindiğinde ise, bu matrisler üzerinde uğraşılan problemlerle alakalıdır, denklemin ve girdilerin doğrusal durumlarını temsil ederler.
 
-- (https://latex.codecogs.com/gif.latex?F) , durum dinamiğinde durum terimlerinin katsayılarını içerir.
+- ![](https://latex.codecogs.com/gif.latex?F) , durum dinamiğinde durum terimlerinin katsayılarını içerir.
 
-- (https://latex.codecogs.com/gif.latex?G) , durum dinamiğinde girdi terimlerinin katsayılarını içerir.
+- ![](https://latex.codecogs.com/gif.latex?G) , durum dinamiğinde girdi terimlerinin katsayılarını içerir.
 
-- (https://latex.codecogs.com/gif.latex?H) ise, durum dinamiğinde çıktı terimlerinin katsayılarını içerir.
+- ![](https://latex.codecogs.com/gif.latex?H) ise, durum dinamiğinde çıktı terimlerinin katsayılarını içerir.
 
 Yukarıda bahsedilen 3 matris genelde zamana bağımlı matrislerdir, durum ve girdinin değişiminden etkilenmezler. Buna ek olarak, bir çok problemde bu matrisler sabit kabul edilir.

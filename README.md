@@ -1,5 +1,5 @@
-# Discrete Kalman Filter
-Kalman Filtresi
+
+# Kalman Filtresi
 
 ## Giriş
 

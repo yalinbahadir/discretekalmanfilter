@@ -24,3 +24,13 @@ Burada **x** durum vektörüdür ve boyutu ![](https://latex.codecogs.com/gif.la
 
 - ![](https://latex.codecogs.com/gif.latex?v) ve ![](https://latex.codecogs.com/gif.latex?w) yani süreç ve ölçüm vektörleri direkt olarak denklemin ilgili kısımlarında kendilerini göstermez, bunun yerine denkelm içerisindeki rastgeleliği ve/veya gürültüyü modellemek için kullanılır. Bu modelleme kendini farklı şekilde göstebilir. Örneğin temel fizik kurallarında yok sayılabilirken, daha sezgisel şekilde kurulan bir denklemin güvenilirliğine doğrudan etki edebilirler. Bu tip durumlarda, belirgin ölçüde hata sistemde   ![](https://latex.codecogs.com/gif.latex?v) ve ![](https://latex.codecogs.com/gif.latex?w) olarak yer alır. Hatanın bir başka şekli ise, sensöz ölçümlerindeki denklemlerde kullanılan hatadır. İki hata vektörüi sensöz ölçümlerinin sonuç aldığı hatalardır denilebilir. Aslında, bu hata ![](https://latex.codecogs.com/gif.latex?v) 'nin çıktı denkemlerinde yer alan ve hatayı o denkelmlerde gösteren en yaygın halidir. Şu önemlidir ki, bu hata denklemin kendisinde barınmaz, ancak denklemin ölçüm için ne kadar kullanışlı ve güvenilir olduğunu temsil eder ve bu anlamda doğruluğunun ölçümü adına kaynak sağlar. ![](https://latex.codecogs.com/gif.latex?v) ve ![](https://latex.codecogs.com/gif.latex?w) aslında denklem (1) ve (2) içinde barınmaz, ancak süreç ve ölçüm kovaryanslarını
 (![](https://latex.codecogs.com/gif.latex?Q), ![](https://latex.codecogs.com/gif.latex?R)) tanımlamak için kullanılırlar ve sıfır ortalamalı hatalar olarak varsayılırlar.
+
+![](https://latex.codecogs.com/gif.latex?F) ,  ![](https://latex.codecogs.com/gif.latex?G) ve ![](https://latex.codecogs.com/gif.latex?H) vektörlerine gelindiğinde ise, bu matrisler üzerinde uğraşılan problemlerle alakalıdır, denklemin ve girdilerin doğrusal durumlarını temsil ederler.
+
+- (https://latex.codecogs.com/gif.latex?F) , durum dinamiğinde durum terimlerinin katsayılarını içerir.
+
+- (https://latex.codecogs.com/gif.latex?G) , durum dinamiğinde girdi terimlerinin katsayılarını içerir.
+
+- (https://latex.codecogs.com/gif.latex?H) ise, durum dinamiğinde çıktı terimlerinin katsayılarını içerir.
+
+Yukarıda bahsedilen 3 matris genelde zamana bağımlı matrislerdir, durum ve girdinin değişiminden etkilenmezler. Buna ek olarak, bir çok problemde bu matrisler sabit kabul edilir.

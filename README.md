@@ -16,7 +16,7 @@ Burada **x** durum vektörüdür ve boyutu ![](https://latex.codecogs.com/gif.la
 
 ### Değişkenler ve Açıklaması
 
--![](https://latex.codecogs.com/gif.latex?x) durum vektörü, filtre tarafından tahmin edilecek değerleri tutan vektördür. Yani bu vektörün elemanlarıı, filtreden geçmesi arzu edilenlerdir. Diğer filtre işlemleri baz alındığında genel olarak çıktı, ne elde edilmeye çalışıldığını gösterir ancak durum tahmin probleminde Kalman kullanılıyorsa, durumlar hangi sonucun arzu edildiğini söyler. Örneğin bir yolda giden aracın doğru zamanda doğru yerde olmasını, o aracın hızıyla ilişkilendirirsem; çıktım değil durumum hız olur.
+- ![](https://latex.codecogs.com/gif.latex?x) durum vektörü, filtre tarafından tahmin edilecek değerleri tutan vektördür. Yani bu vektörün elemanlarıı, filtreden geçmesi arzu edilenlerdir. Diğer filtre işlemleri baz alındığında genel olarak çıktı, ne elde edilmeye çalışıldığını gösterir ancak durum tahmin probleminde Kalman kullanılıyorsa, durumlar hangi sonucun arzu edildiğini söyler. Örneğin bir yolda giden aracın doğru zamanda doğru yerde olmasını, o aracın hızıyla ilişkilendirirsem; çıktım değil durumum hız olur.
 
 - Çıktı vektörü olan ![](https://latex.codecogs.com/gif.latex?y) ise, ne aranıldığını değil, neyin ölçülebileceğini gösterir. Ölçümler durum nezninden yapılmalı ki, aranılan şeye ne kadar yakın olduğu bilinebilsin. Çıktı vektörünü oluşturan değerler hem matematiksel olarak durumlardan hem de bazı bağımsız ölçüm sistemleri ile hesaplanabilmelidir. Ek olarak bahsedilen bu ölçümler, filtrenin başka hiçbir yerine kullanılmaz.
 

@@ -37,4 +37,10 @@ Yukarıda bahsedilen 3 matris genelde zamana bağımlı matrislerdir, durum ve g
 
 ## 2. Kalman Filtre Algoritması
 
-Kalman Filtresi, filtrenin durumlarını tanımlamak için tahmini takip eden doğrulama sürecinden oluşan bir yinelemeli, bir başka deyişle iteratif, bir yöntemdir. Bazen bu süreç tahminleyici-doğrulayıcı veya tahminleyici-güncelleyici olarak da anılır.
+Kalman Filtresi, filtrenin durumlarını tanımlamak için tahmini takip eden doğrulama sürecinden oluşan bir yinelemeli, bir başka deyişle iteratif, bir yöntemdir. Bazen bu süreç tahminleyici-doğrulayıcı veya tahminleyici-güncelleyici olarak da anılır. Kalman Filtresi'nin temel çalışma mantığı şu şekilde ilerler: "Eğer daha önce nerede olduğum biliniyorsa ve hangi hızla gittiğim belliyse, bir sonraki varacağım noktayı tahmin edebilirim." Bu örnekte 'daha önce nerede olduğum' kısmı, Kalman notasyonunda 'önceki durum', 'gittiğim hız' durum dinamiği ve 'bir sonraki varacağım nokta' ise bir sonraki durum olarak nitelendirilir.
+
+Başlangıç durum tahmini, ![](https://latex.codecogs.com/gif.latex?%5Chat%7Bx%7D_0) ve başlangıç kovaryans matrisi ![](https://latex.codecogs.com/gif.latex?P_0), tahmin-düzeltme formatı yinelenerek her adımda uygulanır. İlk olarak durum vektörü, durum dinamiği denklemi kullanılarak tahmin edilir.
+
+  ![](https://latex.codecogs.com/gif.latex?%5Chat%7B%5Ctextbf%7Bx%7D%7D_%7Bk%7C%7Bk-1%7D%7D%20%3D%20%5Ctextbf%7BF%7D_%7Bk-1%7D%20.%20%5Chat%7B%5Ctextbf%7Bx%7D%7D_%7Bk-1%7D%20&plus;%20%5Ctextbf%7BG%7D_%7Bk-1%7D%20.%20%5Ctextbf%7Bu%7D) (3)
+
+

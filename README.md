@@ -54,5 +54,11 @@ Başlangıç durum tahmini, ![](https://latex.codecogs.com/gif.latex?%5Chat%7Bx%
   Bu adım sonrasında, durum vektörü bir 'yenileme' ile güncellenir. Basitçe bu yenileme işeminde, eski durum vektörü üzerine Kalman Kazancı ile çıktının ölçümü, ki biz buna denklemde ![](https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bz%7D_k) diyeceğiz, ve tahmin edilen çıktı ölçeklendirilir:
   
   ![](https://latex.codecogs.com/gif.latex?%5Chat%7B%5Ctextbf%7Bx%7D%7D_k%20%3D%20%5Chat%7B%5Ctextbf%7Bx%7D%7D_%7Bk%7C%7Bk-1%7D%7D%20&plus;%20%5Ctextbf%7BK%7D_k%28%5Ctextbf%7Bz%7D_k%20-%20%5Ctextbf%7BH%7D_k%20.%20%5Chat%7B%5Ctextbf%7Bx%7D%7D_%7Bk%7C%7Bk-1%7D%7D%29)     (6)
+  
+  Benzer durumda, yani sürecin geldiği mevcut noktada, hata kovaryansının da güncellenmesi gerekir:
+  
+  ![](https://latex.codecogs.com/gif.latex?%5Ctextbf%7BP%7D_k%20%3D%20%28%5Ctextbf%7BI%7D%20-%20%5Ctextbf%7BK%7D_k%5Ctextbf%7BH%7D_k%29%20%5Ctextbf%7BP%7D_%7Bk%7C%7Bk-1%7D%7D)     (7)
+  
+  Burada kullanılan ![](https://latex.codecogs.com/gif.latex?%5Ctextbf%7BI%7D) birim matristir.
 
 

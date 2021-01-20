@@ -14,7 +14,7 @@ Kalman Filtresi sistemi üzerinde çalışmak için doğrusal durum uzayı forma
  
 Burada **x** durum vektörüdür ve boyutu ![](https://latex.codecogs.com/gif.latex?n_x) X 1'dir. **y** ise çıktı vektörüdür ve boyutu ![](https://latex.codecogs.com/gif.latex?n_y) X 1'dir. **u**, girdi vektörüdür ve boyutu ![](https://latex.codecogs.com/gif.latex?n_u) X 1'dir. **w** ve **v** sırasıyla süreç gürültü vektörü ve ölçüm gürültü vektörleridir ve sırasıyla boyutları durum vektörü ve çıktı vektörüyle aynıdır. **F** duruma ait sistem matrisidir ve boyutu ![](https://latex.codecogs.com/gif.latex?n_x) X ![](https://latex.codecogs.com/gif.latex?n_x)'dir, **G** ise girdinin sistem matrisidir ve boyutu ![](https://latex.codecogs.com/gif.latex?n_x) X ![](https://latex.codecogs.com/gif.latex?n_u) 'dur. Son olarak **H** gözlem matrisidir ve boyutu ![](https://latex.codecogs.com/gif.latex?n_y) X ![](https://latex.codecogs.com/gif.latex?n_x)'dir. Burada fark edilmesi gereken şey; gözlem matrisi ve sistem matrisi bağımsız elemanlardır ve kare matris oluşturmak zorunda değillerdir, ancak durum matrisi, boyutlarından da anlaşılabileceği üzere, bir kare matris oluşturmalıdır.
 
-### Değişkenler ve Açıklaması
+### 1.1 Değişkenler ve Açıklaması
 
 - ![](https://latex.codecogs.com/gif.latex?x) durum vektörü, filtre tarafından tahmin edilecek değerleri tutan vektördür. Yani bu vektörün elemanlarıı, filtreden geçmesi arzu edilenlerdir. Diğer filtre işlemleri baz alındığında genel olarak çıktı, ne elde edilmeye çalışıldığını gösterir ancak durum tahmin probleminde Kalman kullanılıyorsa, durumlar hangi sonucun arzu edildiğini söyler. Örneğin bir yolda giden aracın doğru zamanda doğru yerde olmasını, o aracın hızıyla ilişkilendirirsem; çıktım değil durumum hız olur.
 
@@ -60,5 +60,7 @@ Başlangıç durum tahmini, ![](https://latex.codecogs.com/gif.latex?%5Chat%7Bx%
   ![](https://latex.codecogs.com/gif.latex?%5Ctextbf%7BP%7D_k%20%3D%20%28%5Ctextbf%7BI%7D%20-%20%5Ctextbf%7BK%7D_k%5Ctextbf%7BH%7D_k%29%20%5Ctextbf%7BP%7D_%7Bk%7C%7Bk-1%7D%7D)     (7)
   
   Burada kullanılan ![](https://latex.codecogs.com/gif.latex?%5Ctextbf%7BI%7D) birim matristir.
+  
+  
 
 

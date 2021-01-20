@@ -8,5 +8,5 @@ Filtrelerin genel operasyon prensibi, bir denklem veya olay sonucundan istenilen
 
 Kalman Filtresi sistemi üzerinde çalışmak için doğrusal durum uzayı formatında tasarlanır:
 
-    (1) ![1](https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bx%7D_k%20%3D%20%5Ctextbf%7BK%7D_%7Bk-1%7D%20%5Ctextbf%7Bx%7D_%7Bk-1%7D%20&plus;%20%5Ctextbf%7BG%7D_%7Bk-1%7D%20%5Ctextbf%7Bu%7D_%7Bk-1%7D%20&plus;%20%5Ctextbf%7Bw%7D_%7Bk-1%7D)
-    (2) ![](https://latex.codecogs.com/gif.latex?%5Ctextbf%7By%7D_k%20%3D%20%5Ctextbf%7BH%7D_k%20%5Ctextbf%7Bx%7D_k%20&plus;%20%5Ctextbf%7Bv%7D_k)
+ (1) ![1](https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bx%7D_k%20%3D%20%5Ctextbf%7BK%7D_%7Bk-1%7D%20%5Ctextbf%7Bx%7D_%7Bk-1%7D%20&plus;%20%5Ctextbf%7BG%7D_%7Bk-1%7D%20%5Ctextbf%7Bu%7D_%7Bk-1%7D%20&plus;%20%5Ctextbf%7Bw%7D_%7Bk-1%7D)
+ (2)![](https://latex.codecogs.com/gif.latex?%5Ctextbf%7By%7D_k%20%3D%20%5Ctextbf%7BH%7D_k%20%5Ctextbf%7Bx%7D_k%20&plus;%20%5Ctextbf%7Bv%7D_k)

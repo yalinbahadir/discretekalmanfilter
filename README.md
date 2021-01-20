@@ -41,6 +41,18 @@ Kalman Filtresi, filtrenin durumlarını tanımlamak için tahmini takip eden do
 
 Başlangıç durum tahmini, ![](https://latex.codecogs.com/gif.latex?%5Chat%7Bx%7D_0) ve başlangıç kovaryans matrisi ![](https://latex.codecogs.com/gif.latex?P_0), tahmin-düzeltme formatı yinelenerek her adımda uygulanır. İlk olarak durum vektörü, durum dinamiği denklemi kullanılarak tahmin edilir.
 
-  ![](https://latex.codecogs.com/gif.latex?%5Chat%7B%5Ctextbf%7Bx%7D%7D_%7Bk%7C%7Bk-1%7D%7D%20%3D%20%5Ctextbf%7BF%7D_%7Bk-1%7D%20.%20%5Chat%7B%5Ctextbf%7Bx%7D%7D_%7Bk-1%7D%20&plus;%20%5Ctextbf%7BG%7D_%7Bk-1%7D%20.%20%5Ctextbf%7Bu%7D) (3)
+  ![](https://latex.codecogs.com/gif.latex?%5Chat%7B%5Ctextbf%7Bx%7D%7D_%7Bk%7C%7Bk-1%7D%7D%20%3D%20%5Ctextbf%7BF%7D_%7Bk-1%7D%20.%20%5Chat%7B%5Ctextbf%7Bx%7D%7D_%7Bk-1%7D%20&plus;%20%5Ctextbf%7BG%7D_%7Bk-1%7D%20.%20%5Ctextbf%7Bu%7D)     (3)
+  
+  Burada ![](https://latex.codecogs.com/gif.latex?%5Chat%7B%5Ctextbf%7Bx%7D%7D_%7Bk%7C%7Bk-1%7D%7D) bir önceki adımda tahmin edilmiş durum vektörüdür, yani 'k-1 inci adımdaki sonuca göre k ıncı x' olarak adlandırılabilir. ![](https://latex.codecogs.com/gif.latex?%5Chat%7B%5Ctextbf%7Bx%7D%7D_%7Bk-1%7D) ise bir önceki adımda tahmin edilmiş durum vektörüdür. Yukarıdaki (3) denklem sonrasında ise, durum hata kovaryansı da tahmin edilmelidir:
+  
+  ![](https://latex.codecogs.com/gif.latex?%5Ctextbf%7BP%7D_%7Bk%7C%7Bk-1%7D%7D%20%3D%20%5Ctextbf%7BF%7D_%7Bk-1%7D%20%5Ctextbf%7BP%7D_%7Bk-1%7D%20%5Ctextbf%7BF%7D%5ET_%7Bk-1%7D%20&plus;%20%5Ctextbf%7BQ%7D_%7Bk-1%7D)     (4)
+  
+  Burada ise ![](https://latex.codecogs.com/gif.latex?%5Ctextbf%7BP%7D_%7Bk%7C%7Bk-1%7D%7D) önceki adımda tahmin edilmiş hata kovaryansı baz alınarak, mevcut adımda tahmin edilen hata kovaryansını temsil eder. ![](https://latex.codecogs.com/gif.latex?%5Ctextbf%7BP%7D_%7Bk-1%7D) bir önceki tahminde durum hata kovaryans matrisini gösterir ve son olarak ![](https://latex.codecogs.com/gif.latex?%5Ctextbf%7BQ%7D) süreç gürültüsünün kovaryans matrisidir. Tahmin edilmesi gereken değerler hesaplandıktan sonra Kalman Kazancı da hesaplanabilir: 
+  
+  ![](https://latex.codecogs.com/gif.latex?%5Ctextbf%7BK%7D_k%20%3D%20%5Ctextbf%7BP%7D_%7Bk%7C%7Bk-1%7D%7D%20%5Ctextbf%7BH%7D%5ET_k%20%28%5Ctextbf%7BH%7D_k%20%5Ctextbf%7BP%7D_%7Bk%7C%7Bk-1%7D%7D%20%5Ctextbf%7BH%7D%5ET_k%20&plus;%20%5Ctextbf%7BR%7D_k%29%5E%7B-1%7D)     (5)
+  
+  Bu adım sonrasında, durum vektörü bir 'yenileme' ile güncellenir. Basitçe bu yenileme işeminde, eski durum vektörü üzerine Kalman Kazancı ile çıktının ölçümü, ki biz buna denklemde ![](https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bz%7D_k) diyeceğiz, ve tahmin edilen çıktı ölçeklendirilir:
+  
+  ![](https://latex.codecogs.com/gif.latex?%5Chat%7B%5Ctextbf%7Bx%7D%7D_k%20%3D%20%5Chat%7B%5Ctextbf%7Bx%7D%7D_%7Bk%7C%7Bk-1%7D%7D%20&plus;%20%5Ctextbf%7BK%7D_k%28%5Ctextbf%7Bz%7D_k%20-%20%5Ctextbf%7BH%7D_k%20.%20%5Chat%7B%5Ctextbf%7Bx%7D%7D_%7Bk%7C%7Bk-1%7D%7D%29)     (6)
 
 

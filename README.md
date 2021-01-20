@@ -34,3 +34,5 @@ Burada **x** durum vektörüdür ve boyutu ![](https://latex.codecogs.com/gif.la
 - ![](https://latex.codecogs.com/gif.latex?H) ise, durum dinamiğinde çıktı terimlerinin katsayılarını içerir.
 
 Yukarıda bahsedilen 3 matris genelde zamana bağımlı matrislerdir, durum ve girdinin değişiminden etkilenmezler. Buna ek olarak, bir çok problemde bu matrisler sabit kabul edilir.
+
+## 2. Kalman Filtre Algoritması

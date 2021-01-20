@@ -36,3 +36,5 @@ Burada **x** durum vektörüdür ve boyutu ![](https://latex.codecogs.com/gif.la
 Yukarıda bahsedilen 3 matris genelde zamana bağımlı matrislerdir, durum ve girdinin değişiminden etkilenmezler. Buna ek olarak, bir çok problemde bu matrisler sabit kabul edilir.
 
 ## 2. Kalman Filtre Algoritması
+
+Kalman Filtresi, filtrenin durumlarını tanımlamak için tahmini takip eden doğrulama sürecinden oluşan bir yinelemeli, bir başka deyişle iteratif, bir yöntemdir. Bazen bu süreç tahminleyici-doğrulayıcı veya tahminleyici-güncelleyici olarak da anılır.
